@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body {
+    background-color: #161616;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.main {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.about {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Button Styles */
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid grey;
+    margin: 20px 20px 20px 20px;
+    color: lime;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+a {
+    color: lime;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* Fourth Button */
+
+#button-4 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#button-4 a {
+    position: relative;
+    transition: all .45s ease-Out;
+}
+
+#underline {
+    width: 100%;
+    height: 2.5px;
+    margin-top: 15px;
+    align-self: flex-end;
+    left: -200px;
+    background: lime;
+    position: absolute;
+    transition: all .3s ease-Out;
+    bottom: 0;
+}
+
+#button-4:hover #underline {
+    left: 0;
+}
+
+@media screen and (min-width:1000px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    #container {
+        width: 50%;
+    }
+}
