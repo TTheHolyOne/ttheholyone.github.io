@@ -28,6 +28,12 @@ body {
     max-height: 100%;
     max-width: 100%;
 }
+.sites {
+	color:white;
+}
+.sites:hover {
+	color:lime;
+}
 
 /* Button Styles */
 
