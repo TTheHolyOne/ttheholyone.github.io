@@ -1,14 +1,20 @@
+:root {
+  --bgcolor: #121212;	
+  --sbgcolor: lime;
+  --color: white;
+  --btncolor: #161616;
+}
 body {
-    background-color: #121212;
-    color: white;
+    background-color: var(--bgcolor);
+    color: var(--color);
     font-family: Monospace;
 }
 
 ::selection {
   /* Change highlight background color to black */
-  background: #121212;
+  background:var(--bgcolor);
   /* Change highlight text color to red */
-  color: lime;
+  color: var(--sbgcolor);
 }
 .main {
     margin: 0 auto;
@@ -35,10 +41,10 @@ body {
     max-width: 100%;
 }
 .sites {
-	color:white;
+	color:var(--color);
 }
 .sites:hover {
-	color:lime;
+	color:var(--sbgcolor);
 }
 
 /* Button Styles */
@@ -46,11 +52,11 @@ body {
 .button {
     display: inline-flex;
     height: 40px;
-	background-color:#161616;
+    background-color: var(--btncolor);
     width: 150px;
     border: 2px solid grey;
     margin: 20px 20px 20px 20px;
-    color: lime;
+    color: var(--sbgcolor);
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
@@ -61,7 +67,7 @@ body {
 }
 
 a {
-    color: lime;
+    color: var(--sbgcolor);
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -85,7 +91,7 @@ a {
     margin-top: 15px;
     align-self: flex-end;
     left: -200px;
-    background: lime;
+    background: var(--sbgcolor);
     position: absolute;
     transition: all .3s ease-Out;
     bottom: 0;
@@ -99,7 +105,7 @@ a {
 .button1 {
     display: inline-flex;
     height: 20px;
-	background-color:#161616;
+    background-color: var(--btncolor);
     width: 75px;
     border: 2px solid grey;
     margin: 20px 20px 20px 20px;
