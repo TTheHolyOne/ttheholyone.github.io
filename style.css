@@ -4,18 +4,36 @@
   --sbgcolor: lime;
   --color: white;
   --btncolor: #161616;
+  --ccolor: white;
 }
 :root.red {
   --bgcolor: #121212;	
   --sbgcolor: red;
   --color: white;
   --btncolor: #161616;
+  --ccolor: white;
+
 }
 :root.cyan {
   --bgcolor: #121212;	
   --sbgcolor: cyan;
   --color: white;
   --btncolor: #161616;
+  --ccolor: white;	
+}
+:root.light {
+  --bgcolor: #fff;	
+  --sbgcolor: #ae4747;
+  --color: #6b0000;
+  --btncolor: #fff;
+  --ccolor: #ae4747;
+}
+:root.dark {
+  --bgcolor: #121212;	
+  --sbgcolor: darkgrey;
+  --color: white;
+  --btncolor: #161616;
+  --ccolor: white;
 }
 body {
     background-color: var(--bgcolor);
@@ -26,7 +44,12 @@ body {
 .home{
   color: var(--sbgcolor);	
 }
-
+.back{
+	color: var(--color);
+}
+.credits{
+	color: var(--ccolor);
+}
 ::selection {
   /* Change highlight background color to black */
   background:var(--bgcolor);
