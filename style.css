@@ -2,6 +2,7 @@
 :root.lime {
   --bgcolor: #121212;	
   --sbgcolor: lime;
+  --bcolor: white;
   --color: white;
   --btncolor: #161616;
   --ccolor: white;
@@ -9,6 +10,8 @@
 :root.red {
   --bgcolor: #121212;	
   --sbgcolor: red;
+  --bcolor: white;
+
   --color: white;
   --btncolor: #161616;
   --ccolor: white;
@@ -18,12 +21,15 @@
   --bgcolor: #121212;	
   --sbgcolor: cyan;
   --color: white;
+  --bcolor: white;
+
   --btncolor: #161616;
   --ccolor: white;	
 }
 :root.light {
   --bgcolor: #fff;	
   --sbgcolor: #ae4747;
+  --bcolor: #6b0000;
   --color: #6b0000;
   --btncolor: #fff;
   --ccolor: #ae4747;
@@ -31,6 +37,7 @@
 :root.dark {
   --bgcolor: #121212;	
   --sbgcolor: darkgrey;
+  --bcolor: white;
   --color: white;
   --btncolor: #161616;
   --ccolor: white;
@@ -45,7 +52,7 @@ body {
   color: var(--sbgcolor);	
 }
 .back{
-	color: var(--color);
+	color: var(--bcolor);
 }
 .credits{
 	color: var(--ccolor);
