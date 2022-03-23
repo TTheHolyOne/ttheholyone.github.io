@@ -17,6 +17,36 @@
   --ccolor: white;
 
 }
+:root.purple {
+  --bgcolor: #121212;	
+  --sbgcolor: purple;
+  --bcolor: white;
+
+  --color: white;
+  --btncolor: #161616;
+  --ccolor: white;
+
+}
+:root.orange {
+  --bgcolor: #121212;	
+  --sbgcolor: orange;
+  --bcolor: white;
+
+  --color: white;
+  --btncolor: #161616;
+  --ccolor: white;
+
+}
+:root.pink {
+  --bgcolor: #121212;	
+  --sbgcolor: hotpink;
+  --bcolor: white;
+
+  --color: white;
+  --btncolor: #161616;
+  --ccolor: white;
+
+}
 :root.cyan {
   --bgcolor: #121212;	
   --sbgcolor: cyan;
