@@ -9,8 +9,8 @@
 		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 		<script src="../assets/js/script.js">
 		</script>
-		<link type="" href="https://holymods.dev/assets/images/icon.png" rel="mask icon" color="#111">
-		<link href="https://holymods.dev/assets/images/icon.png" rel="icon" >
+		<link rel="icon" type="image/x-icon"  href="https://holymods.dev/assets/images/icon.png">
+		<link  rel="mask-icon" type="" href="https://holymods.dev/assets/images/icon.png"  color="#111" />
 	</head>
 	<body>
 		<div class="main">
@@ -117,16 +117,24 @@
 			<h1>Tab Cloaker</h1>
 				</div>
 		<div class="about">
-
-			  <p>> Enter text below to change the title or icon</p>
+	<div class="console-container">
+		<div class="console">
+			<div class="consolebody">
+			  <p>> Enter text below to change the title or an image URL to change the icon</p>
 			  <p>> Examples: Classroom</p>
-			  <p>> <input id="userinput" type="text" placeholder="Enter a valid title or icon url" autocomplete="off" autofocus></input></p>
-				<button onclick="changeTabTitle()" >Set Title</button>
-				<button onclick="changeTabIcon()" >Set Icon</button>
-			<button onclick="resetTabSettings()">Reset</button>
+			  <p>> https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Google_Classroom_icon.svg/1200px-Google_Classroom_icon.svg.png</p>
+			  <p class="console-input">> <input id="userinput" type="text" placeholder="Enter a valid title or image URL" autocomplete="off" autofocus></input></p>			  
+		</div>
+		<div class="button-wrapper">
+			<button onclick="changeTabTitle()" class="console-button">Set Title</button>
+			<button onclick="changeTabIcon()" class="console-button">Set Icon</button>
+			<button onclick="resetTabSettings()" class="console-button">Reset</button>
+		</script>		<script src="../assets/js/tabcloak.js">
+		</script>
+		</div>
+	</div>
 		</div>
 
-		</div>
 		
 		<br/><br/>
 
