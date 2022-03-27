@@ -14,8 +14,8 @@
 		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 		<script src="../assets/js/script.js">
 		</script>
-		<link type="" href="https://holymods.dev/assets/images/icon.png" rel="mask icon" color="#111">
-		<link href="https://holymods.dev/assets/images/icon.png" rel="icon" >
+
+		<link href="../assets/images/icon.png" rel="icon" >
 	</head>
 	<body>
 		<div class="main">
@@ -99,7 +99,13 @@
 				<p href="#" style="font-size: 8px;">
 					ORANGEBLACK
 				</p></a><br/>
-
+				<a class="button1" href="#" id="button-5" onclick=
+				"setTheme('rgb')" title="RGB mode">
+				<div id="underline">
+				</div>
+				<p href="#">
+					RGB
+				</p>
 				<a class="button1" href="#" id="button-5" onclick=
 				"setTheme('light')" title="Light mode">
 				<div id="underline">
@@ -125,15 +131,16 @@
 	<div class="console-container">
 		<div class="console">
 			<div class="consolebody">
-			  <p>> Enter text below to change the title or an image URL to change the icon</p>
+			  <p>> Enter text below to change the title or an image URL to change the icon<br/>Whenever you tab out of this page it will change name to the title and icon you chose</p>
 			  <p>> Examples: Classroom</p>
 			  <p>> https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Google_Classroom_icon.svg/1200px-Google_Classroom_icon.svg.png</p>
-			  <p class="console-input">> <input id="userinput" type="text" placeholder="Enter a valid title or image URL" autocomplete="off" autofocus></input></p>			  
+<p>title</p>
+<input type="text" id="text" placeholder="Enter a valid title"/>
+				<p>icon url</p><input type="text" id="icon" placeholder="Enter a valid icon url"/>		  
 		</div>
 		<div class="button-wrapper">
-			<button onclick="changeTabTitle()" class="console-button">Set Title</button>
-			<button onclick="changeTabIcon()" class="console-button">Set Icon(WIP)</button>
-			<button onclick="resetTabSettings()" class="console-button">Reset</button>
+<button onclick="update()">Save</button>		<div class="button-wrapper">
+<button onclick="reset()">Reset</button>
 		</script>		<script src="../assets/js/tabcloak.js">
 		</script>
 		</div>

@@ -9,8 +9,8 @@
     <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
     <script src="../assets/js/script.js">
     </script>
-		<link type="" href="https://holymods.dev/assets/images/icon.png" rel="mask icon" color="#111">
-		<link href="https://holymods.dev/assets/images/icon.png" rel="icon" >
+		<link href="../assets/images/icon.png" rel="icon" >
+
 </head>
 
 <body>
@@ -81,6 +81,24 @@
 					</div>
 					<p href="http://github.holymods.dev">GITHUB</p>
 				</a>
-    </div>
+    </div><script>
+let options = JSON.parse(localStorage.getItem("settings")) || {
+  title: "Google",
+  icon: "https://google.com/favicon.ico"
+}
+
+const originalTitle = document.title;
+const originalIcon = document.querySelector("link[rel='icon']").href;
+  
+document.addEventListener("visibilitychange", ()  => {
+  if (document.hidden) {
+    document.title = options.title;
+    document.querySelector("link[rel='icon']").href = options.icon;
+  } else {
+    document.title = originalTitle;
+    document.querySelector("link[rel='icon']").href = originalIcon;
+  }
+});
+</script>
 </body>
 </html>

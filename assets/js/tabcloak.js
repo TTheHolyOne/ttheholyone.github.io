@@ -1,60 +1,33 @@
-//Autofocus without scroll
-document.querySelector("#userinput").focus({
-    preventScroll: true
+
+let options = JSON.parse(localStorage.getItem("settings")) || {
+  title: "Google",
+  icon: "https://google.com/favicon.ico"
+}
+
+document.getElementById("text").value = options.title;
+document.getElementById("icon").value = options.icon;
+  
+const originalTitle = document.title;
+const originalIcon = document.querySelector("link[rel='icon']").href;
+  
+document.addEventListener("visibilitychange", ()  => {
+  if (document.hidden) {
+    document.title = options.title;
+    document.querySelector("link[rel='icon']").href = options.icon;
+  } else {
+    document.title = originalTitle;
+    document.querySelector("link[rel='icon']").href = originalIcon;
+  }
 });
 
-const image_preview = document.getElementById("image-preview");
-const console_output = document.getElementById("console-output");
-
-//Change tabTitle
-const changeTabTitle = () => {
-    const newtitle = document.getElementById("userinput");
-    if (newtitle.value == ""){ //check if the input is blank when they submit
-        window.localStorage.removeItem("title");
-        window.document.title = "UBG100"
-        document.getElementById("console-output").style.color = "red"; //error = red
-        console_output.innerText = "No title entered. Default applied" //return output successful
-    } else {
-        window.localStorage.setItem("title", newtitle.value);
-        window.document.title = newtitle.value; //Set window's title to userinput
-        document.getElementById("console-output").style.color = null; //reset output's color to green
-        console_output.innerText = "Title change successful" //return output successful
-    }
-    newtitle.value = ""; //clear input
-};
-
-//Change the tabIcon
-const changeTabIcon = () => {
-    const newfavicon = document.getElementById("userinput");
-    if (validURL(newfavicon.value)){
-        document.head.querySelector("link[rel=icon]").href = newfavicon.value;
-        window.localStorage.setItem("icon", newfavicon.value);
-        loadPreview();
-        document.getElementById("console-output").style.color = null;
-        console_output.innerText = "Icon change successful"
-    } else {
-        document.getElementById("console-output").style.color = "red";
-        console_output.innerText = "Icon change failed. Make sure you are using a valid URL"
-    }
-    newfavicon.value = ""; //clear input
-};
-
-//Load preview of image
-const loadPreview = () => {
-    image_preview.setAttribute("src", localStorage.getItem("icon"));
-};
-
-//Clears Tab Icon and Title
-const resetTabSettings = () => {
-    let items = ["icon", "title"];
-    items.forEach(item =>
-    window.localStorage.removeItem(item));
-    window.location.reload();
-};
-
-//URL Validation Regex
-const validURL = (str) => {
-    var expression = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
-    var regex = new RegExp(expression);
-    return !!regex.test(str);
+function update () {
+  options.title = document.getElementById("text").value;
+  options.icon = document.getElementById("icon").value;
+  localStorage.setItem("settings", JSON.stringify(options));
+  location.reload();
+}function reset () {
+  options.title = originalTitle;
+  options.icon = originalIcon;
+  localStorage.setItem("settings", JSON.stringify(options));
+  location.reload();
 }
