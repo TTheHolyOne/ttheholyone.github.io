@@ -125,9 +125,6 @@
 				<li>
 					<a class="sites" href="https://now.gg/play/mojang/2534/minecraft-trial">Minecraft</a>
 				</li>
-				<li>
-				<a class="sites" href="https://app.apponfly.com/trial">Windows 10</a>	
-				</li>
 			</ul>
 		</div>
 
@@ -152,10 +149,11 @@
 				<li>
 					<a class="sites" href="https://holymods.dev/holyunblocked/index.html">Same site again but another domain if blocked</a>
 				</li>
-										<li>
-							<a class="sites" href="						https://replit.com/@TTheHolyOne/HOLYBLOCK#main.py
-">Br*wser</a>
-						</li>
+
+
+				<li>
+					<a class="sites" href="https://replit.com/@TTheHolyOne/HOLYBLOCK#main.py">Br*wser</a>
+				</li>
 			</ul>
 		</div>
 
@@ -181,23 +179,23 @@
 		</div>
 	</div>
 	<script>
-	let options = JSON.parse(localStorage.getItem("settings")) || {
-	 title: "Google",
-	 icon: "https://google.com/favicon.ico"
-	}
+	   let options = JSON.parse(localStorage.getItem("settings")) || {
+	    title: "Google",
+	    icon: "https://google.com/favicon.ico"
+	   }
 
-	const originalTitle = document.title;
-	const originalIcon = document.querySelector("link[rel='icon']").href;
-	 
-	document.addEventListener("visibilitychange", ()  => {
-	 if (document.hidden) {
-	   document.title = options.title;
-	   document.querySelector("link[rel='icon']").href = options.icon;
-	 } else {
-	   document.title = originalTitle;
-	   document.querySelector("link[rel='icon']").href = originalIcon;
-	 }
-	});
+	   const originalTitle = document.title;
+	   const originalIcon = document.querySelector("link[rel='icon']").href;
+	    
+	   document.addEventListener("visibilitychange", ()  => {
+	    if (document.hidden) {
+	      document.title = options.title;
+	      document.querySelector("link[rel='icon']").href = options.icon;
+	    } else {
+	      document.title = originalTitle;
+	      document.querySelector("link[rel='icon']").href = originalIcon;
+	    }
+	   });
 	</script>
 </body>
 </html>
