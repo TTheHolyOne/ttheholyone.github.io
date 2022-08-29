@@ -52,9 +52,16 @@
   --sbgcolor: cyan;
   --color: white;
   --bcolor: white;
-
   --btncolor: #161616;
   --ccolor: white;	
+}
+:root.rgb {
+  --bgcolor: #121212;	
+  --sbgcolor: lime;
+  --color: red;
+  --bcolor: blue;
+  --btncolor: #161616;
+  --ccolor: lime;	
 }
 :root.light {
   --bgcolor: #fff;	
