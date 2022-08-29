@@ -2,86 +2,86 @@
 
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width" name="viewport">
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
 
-    <title>HolyMods - Shop</title>
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="../assets/js/script.js">
-    </script>
-		<link href="../assets/images/icon.png" rel="icon" >
-
-
+	<title>HolyMods - Shop</title>
+	<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="../assets/js/script.js">
+	</script>
+	<link href="../assets/images/icon.png" rel="icon">
 </head>
 
 <body>
-    <div class="main">
-        <h1><a href="../"  class="back"style=" text-decoration: none;">back</a><a href="https://www.holymods.dev" style=
-        "display:inline;  text-decoration: none;" class="home">.home</a>
-        </h1>
-    </div>
-
-
-    <div class="about">
-        <p>I'm TTheHolyOne and welcome to holymods.dev!<br/>I create and mod then sell! </p>
+	<div class="main">
+		<h1><a class="back" href="../" style=" text-decoration: none;">back</a><a class="home" href="https://www.holymods.dev" style="display:inline; text-decoration: none;">.home</a>
+		</h1>
 	</div>
-		<div class="main">
+
+
+	<div class="about">
+		<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
+		I create and mod then sell!</p>
+	</div>
+
+
+	<div class="main">
 		<h2>Recoveries:</h2>
-		</div>
-		<div class="about">
+	</div>
+
+
+	<div class="about">
 		<p>...</p>
-		</div>
-		<div class="main">
+	</div>
+
+
+	<div class="main">
 		<h2>Tools:</h2>
-		</div>
-		<div class="about">
+	</div>
+
+
+	<div class="about">
 		<p>...</p>
+	</div>
+
+
+	<div class="main">
+		<a class="credits" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights Reserved</a><br>
+		<a class="button1" href="http://discord.holymods.dev" id="button-5">
+		<div id="underline">
 		</div>
-		
 
 
+		<p href="http://discord.holymods.dev">DISCORD</p></a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+		<div id="underline">
+		</div>
 
 
+		<p href="http://youtube.holymods.dev">YOUTUBE</p></a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+		<div id="underline">
+		</div>
 
 
-			<div class="main">
-				<a  class="credits"href="https://github.holymods.dev">
-				© 2022 holymods.dev, All Rights Reserved</a>
-		
-					<br/>
-	<a class="button1" href="http://discord.holymods.dev" id="button-5">
-					<div id="underline">
-					</div>
-					<p href="http://discord.holymods.dev">DISCORD</p>
-				</a>
-								<a class="button1" href="http://youtube.holymods.dev" id="button-5">
-					<div id="underline">
-					</div>
-					<p href="http://youtube.holymods.dev">YOUTUBE</p>
-				</a>
-												<a class="button1" href="http://github.holymods.dev" id="button-5">
-					<div id="underline">
-					</div>
-					<p href="http://github.holymods.dev">GITHUB</p>
-				</a>
-    </div>	</div><script>
-let options = JSON.parse(localStorage.getItem("settings")) || {
-  title: "Google",
-  icon: "https://google.com/favicon.ico"
-}
+		<p href="http://github.holymods.dev">GITHUB</p></a>
+	</div>
+	<script>
+	let options = JSON.parse(localStorage.getItem("settings")) || {
+	 title: "Google",
+	 icon: "https://google.com/favicon.ico"
+	}
 
-const originalTitle = document.title;
-const originalIcon = document.querySelector("link[rel='icon']").href;
-  
-document.addEventListener("visibilitychange", ()  => {
-  if (document.hidden) {
-    document.title = options.title;
-    document.querySelector("link[rel='icon']").href = options.icon;
-  } else {
-    document.title = originalTitle;
-    document.querySelector("link[rel='icon']").href = originalIcon;
-  }
-});
-</script>
+	const originalTitle = document.title;
+	const originalIcon = document.querySelector("link[rel='icon']").href;
+	 
+	document.addEventListener("visibilitychange", ()  => {
+	 if (document.hidden) {
+	   document.title = options.title;
+	   document.querySelector("link[rel='icon']").href = options.icon;
+	 } else {
+	   document.title = originalTitle;
+	   document.querySelector("link[rel='icon']").href = originalIcon;
+	 }
+	});
+	</script>
 </body>
 </html>

@@ -1,174 +1,164 @@
 <!DOCTYPE html>
+
 <html>
-	<head>
+<head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="title" content="HOLYMODS">
-	<meta name="description" content="Play, Search, Enjoy.">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="language" content="English">
-		<title>
-			HolyMods - Settings
-		</title>
-		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-		<script src="../assets/js/script.js">
-		</script>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="HOLYMODS" name="title">
+	<meta content="Play, Search, Enjoy." name="description">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="English" name="language">
 
-		<link href="../assets/images/icon.png" rel="icon" >
-	</head>
-	<body>
-		<div class="main">
-			<h1>
-				<a  class="back"href="../" style=" text-decoration: none;">back</a><a class=
-				"home" href="https://www.holymods.dev" style=
-				"display:inline; text-decoration: none;">.home</a>
-			</h1>
-		</div>
+	<title>HolyMods - Settings</title>
+	<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="../assets/js/script.js">
+	</script>
+	<link href="../assets/images/icon.png" rel="icon">
+</head>
 
-		<div class="about">
-			<p>
-				I'm TTheHolyOne and welcome to holymods.dev!<br>
-				I love to develop different things..
-			</p>
-		</div>
+<body>
+	<div class="main">
+		<h1><a class="back" href="../" style=" text-decoration: none;">back</a><a class="home" href="https://www.holymods.dev" style="display:inline; text-decoration: none;">.home</a>
+		</h1>
+	</div>
 
-		<div class="main">
-			<h2>
-				Settings:
-			</h2>
-		</div>
 
-		<div class="about">
-			<h2>
-			</h2>
+	<div class="about">
+		<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
+		I love to develop different things..</p>
+	</div>
 
-			<h3>
-				Theme
-			</h3>
-		</div>
 
-		<div class="main">
-			<div id="toggle-container">
-				<a class="button1" href="#" id="button-5" onclick="setTheme('lime')" title=
-				"Lime mode">
-				<div id="underline">
-				</div>
+	<div class="main">
+		<h2>Settings:</h2>
+	</div>
 
-				<p href="#">
-					LIMEBLACK
-				</p></a> 
-				<a class="button1" href="#" id="button-5" onclick=
-				"setTheme('cyan')" title="Cyan mode">
-				<div id="underline">
-				</div>
 
-				<p href="#">
-					CYANBLACK
-				</p>
-				
-				</a> <a class="button1" href="#" id="button-5" onclick=
-				"setTheme('red')" title="Red mode">
-				<div id="underline">
-				</div>
+	<div class="about">
+		<h2>
+		</h2>
 
-				<p href="#">
-					REDBLACK
-				</p></a>				<br/>
 
-				</a> <a class="button1" href="#" id="button-5" onclick=
-				"setTheme('pink')" title="Pink mode">
-				<div id="underline">
-				</div>
+		<h3>Theme</h3>
+	</div>
 
-				<p href="#">
-					PINKBLACK
-				</p></a>
-				</a> <a class="button1" href="#" id="button-5" onclick=
-				"setTheme('purple')" title="Purple mode">
-				<div id="underline">
-				</div>
 
-				<p href="#" style="font-size: 8px;">
-					PURPLEBLACK
-				</p></a> <a class="button1" href="#" id="button-5" onclick=
-				"setTheme('orange')" title="Orange mode">
-				<div id="underline">
-				</div>
-
-				<p href="#" style="font-size: 8px;">
-					ORANGEBLACK
-				</p></a><br/>
-				<a class="button1" href="#" id="button-5" onclick=
-				"setTheme('rgb')" title="RGB mode">
-				<div id="underline">
-				</div>
-				<p href="#">
-					RGB
-				</p>
-				<a class="button1" href="#" id="button-5" onclick=
-				"setTheme('light')" title="Light mode">
-				<div id="underline">
-				</div>
-				<p href="#">
-					LIGHT
-				</p>
-				<a class="button1" href="#" id="button-5" onclick=
-				"setTheme('dark')" title="Dark mode">
-				<div id="underline">
-				</div>
-
-				<p href="#">
-					DARK
-				</p></a>
+	<div class="main">
+		<div id="toggle-container">
+			<a class="button1" href="#" id="button-5" onclick="setTheme('lime')" title="Lime mode">
+			<div id="underline">
 			</div>
-		</div>
 
-		<div class="about">
-			<h1>Tab Cloaker</h1>
-				</div>
-		<div class="about">
-	<div class="console-container">
-		<div class="console">
-			<div class="consolebody">
-			  <p>> Enter text below to change the title or an image URL to change the icon<br/>Whenever you tab out of this page it will change name to the title and icon you chose</p>
-			  <p>> Examples: Classroom</p>
-			  <p>> https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Google_Classroom_icon.svg/1200px-Google_Classroom_icon.svg.png</p>
-<p>title</p>
-<input type="text" id="text" placeholder="Enter a valid title"/>
-				<p>icon url</p><input type="text" id="icon" placeholder="Enter a valid icon url"/>		  
-		</div>
-		<div class="button-wrapper">
-<button onclick="update()">Save</button>		<div class="button-wrapper">
-<button onclick="reset()">Reset</button>
-		</script>		<script src="../assets/js/tabcloak.js">
-		</script>
+
+			<p href="#">LIMEBLACK</p></a> <a class="button1" href="#" id="button-5" onclick="setTheme('cyan')" title="Cyan mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#">CYANBLACK</p></a> <a class="button1" href="#" id="button-5" onclick="setTheme('red')" title="Red mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#">REDBLACK</p></a><br>
+			<a class="button1" href="#" id="button-5" onclick="setTheme('pink')" title="Pink mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#">PINKBLACK</p></a> <a class="button1" href="#" id="button-5" onclick="setTheme('purple')" title="Purple mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#" style="font-size: 8px;">PURPLEBLACK</p></a> <a class="button1" href="#" id="button-5" onclick="setTheme('orange')" title="Orange mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#" style="font-size: 8px;">ORANGEBLACK</p></a><br>
+			<a class="button1" href="#" id="button-5" onclick="setTheme('rgb')" title="RGB mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#">RGB</p></a> <a class="button1" href="#" id="button-5" onclick="setTheme('light')" title="Light mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#">LIGHT</p></a> <a class="button1" href="#" id="button-5" onclick="setTheme('dark')" title="Dark mode">
+			<div id="underline">
+			</div>
+
+
+			<p href="#">DARK</p></a>
 		</div>
 	</div>
+
+
+	<div class="about">
+		<h1>Tab Cloaker</h1>
+	</div>
+
+
+	<div class="about">
+		<div class="console-container">
+			<div class="console">
+				<div class="consolebody">
+					<p>&gt; Enter text below to change the title or an image URL to change the icon<br>
+					Whenever you tab out of this page it will change name to the title and icon you chose</p>
+
+
+					<p>&gt; Examples: Classroom</p>
+
+
+					<p>&gt; https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Google_Classroom_icon.svg/1200px-Google_Classroom_icon.svg.png</p>
+
+
+					<p>title</p>
+					<input id="text" placeholder="Enter a valid title" type="text">
+
+					<p>icon url</p>
+					<input id="icon" placeholder="Enter a valid icon url" type="text">
+				</div>
+
+
+				<div class="button-wrapper">
+					<button onclick="update()">Save</button>
+
+					<div class="button-wrapper">
+						<button onclick="reset()">Reset</button> 
+						<script src="../assets/js/tabcloak.js">
+						</script>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+
+
+			<div class="main">
+				<a class="credits" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights Reserved</a><br>
+				<a class="button1" href="http://discord.holymods.dev" id="button-5">
+				<div id="underline">
+				</div>
+
+
+				<p href="http://discord.holymods.dev">DISCORD</p></a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+				<div id="underline">
+				</div>
+
+
+				<p href="http://youtube.holymods.dev">YOUTUBE</p></a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+				<div id="underline">
+				</div>
+
+
+				<p href="http://github.holymods.dev">GITHUB</p></a>
+			</div>
 		</div>
-
-		
-		<br/><br/>
-
-        <div class="main">
-            <a href="https://github.holymods.dev" class="credits">© 2022 holymods.dev, All Rights Reserved</a><br>
-            <a class="button1" href="http://discord.holymods.dev" id="button-5">
-            <div id="underline">
-            </div>
-
-
-            <p href="http://discord.holymods.dev">DISCORD</p></a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
-            <div id="underline">
-            </div>
-
-
-            <p href="http://youtube.holymods.dev">YOUTUBE</p></a> <a class="button1" href="http://github.holymods.dev" id="button-5">
-            <div id="underline">
-            </div>
-
-
-            <p href="http://github.holymods.dev">GITHUB</p></a>
-        </div>
-    </div>
+	</div>
 </body>
 </html>

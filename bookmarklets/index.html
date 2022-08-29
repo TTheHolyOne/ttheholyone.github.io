@@ -2,97 +2,118 @@
 
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width" name="viewport">
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
 
-    <title>HolyMods - Bookmarklets</title>
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="../assets/js/script.js">
-    </script>
-		<link href="../assets/images/icon.png" rel="icon" >
-
+	<title>HolyMods - Bookmarklets</title>
+	<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="../assets/js/script.js">
+	</script>
+	<link href="../assets/images/icon.png" rel="icon">
 </head>
 
 <body>
-    <div class="main">
-        <h1><a href="../"  class="back"style=" text-decoration: none;">back</a><a href="https://www.holymods.dev" style=
-        "display:inline; text-decoration: none;" class="home">.home</a>
-        </h1>
-    </div>
-
-
-    <div class="about">
-        <p>I'm TTheHolyOne and welcome to holymods.dev!<br/>I love bookmarklets </p>
+	<div class="main">
+		<h1><a class="back" href="../" style=" text-decoration: none;">back</a><a class="home" href="https://www.holymods.dev" style="display:inline; text-decoration: none;">.home</a>
+		</h1>
 	</div>
-		<div class="main">
-		<h2>Bookmarklets:</h2>
-		</div>
-		<div class="about">
-		<ul>
-			<li> <a class="sites" href="javascript:document.title='TTHEHOLYONE.COM';(function(){const a=document.createElement('div');a.style.position='fixed';a.style.top='5%';a.style.left='50%';a.style.transform='translate(-50%, 0%';a.style.fontSize='5rem';a.style.backgroundColor='#3a3aff';a.style.color='#ee0000';a.style.border='10px%20solid%20#ee0000';a.style.zIndex='9999';a.style.lineHeight='normal';a.style.cursor='not-allowed';a.style.userSelect='none';a.textContent='my%20little%20shrekss';document.body.appendChild(a);const%20b%20=%20['overline','blink','underline'];let%20c%20=%200;setInterval(()=%3E{a.style.textDecorationLine=b[c];const%20d=a.style.backgroundColor;a.style.backgroundColor=a.style.color;a.style.color=d;a.style.borderColor=d;if(c%3Cb.length-1)c++;else%20c=0;},100);})();(function(){const%20a=document.createElement('div');a.style.position='fixed';a.style.top='5%';a.style.left='50%';a.style.transform='translate(-50%,%200%';a.style.fontSize='1rem';a.style.backgroundColor='#3a3aff';a.style.color='#ee0000';a.style.border='10px%20solid%20#ee0000';a.style.zIndex='9999';a.style.lineHeight='normal';a.style.cursor='not-allowed';a.style.userSelect='none';a.textContent='ttheholyone.com';document.body.appendChild(a);const%20b%20=%20['overline','blink','underline'];let%20c%20=%200;setInterval(()=%3E{a.style.textDecorationLine=b[c];const%20d=a.style.backgroundColor;a.style.backgroundColor=a.style.color;a.style.color=d;a.style.borderColor=d;if(c%3Cb.length-1)c++;else%20c=0;},100);})();(function%20(srcs,cfg)%20{%20var%20cbcount%20=%201;%20var%20callback%20=%20function%20()%20{%20--%20cbcount;%20if%20(cbcount%20===%200)%20{%20BrowserPonies.setBaseUrl(cfg.baseurl);%20if%20(!BrowserPoniesBaseConfig.loaded)%20{%20BrowserPonies.loadConfig(BrowserPoniesBaseConfig);%20BrowserPoniesBaseConfig.loaded%20=%20true;%20}%20BrowserPonies.loadConfig(cfg);%20if%20(!BrowserPonies.running())%20BrowserPonies.start();%20}%20};%20if%20(typeof(BrowserPoniesConfig)%20===%20%22undefined%22)%20{%20window.BrowserPoniesConfig%20=%20{};%20}%20if%20(typeof(BrowserPoniesBaseConfig)%20===%20%22undefined%22)%20{%20++%20cbcount;%20BrowserPoniesConfig.onbasecfg%20=%20callback;%20}%20if%20(typeof(BrowserPonies)%20===%20%22undefined%22)%20{%20++%20cbcount;%20BrowserPoniesConfig.oninit%20=%20callback;%20}%20var%20node%20=%20(document.body%20||%20document.documentElement%20||%20document.getElementsByTagName('head')[0]);%20for%20(var%20id%20in%20srcs)%20{%20if%20(document.getElementById(id))%20continue;%20if%20(node)%20{%20var%20s%20=%20document.createElement('script');%20s.type%20=%20'text/javascript';%20s.id%20=%20id;%20s.src%20=%20srcs[id];%20node.appendChild(s);%20}%20else%20{%20document.write('\u003cscript%20type=%22text/javscript%22%20src=%22'+%20srcs[id]+'%22%20id=%22'+id+'%22\u003e\u003c/script\u003e');%20}%20}%20callback();})({%22browser-ponies-script%22:%22https://panzi.github.io/Browser-Ponies/browserponies.js%22,%22browser-ponies-config%22:%22https://panzi.github.io/Browser-Ponies/basecfg.js%22},{%22baseurl%22:%22https://panzi.github.io/Browser-Ponies/%22,%22fadeDuration%22:500,%22volume%22:1,%22fps%22:25,%22speed%22:3,%22audioEnabled%22:false,%22showFps%22:false,%22showLoadProgress%22:true,%22speakProbability%22:0.1,%22spawn%22:{%22applejack%22:1,%22fluttershy%22:1,%22pinkie%20pie%22:1,%22rainbow%20dash%22:1,%22rarity%22:1,%22twilight%20sparkle%22:1}});void(0);(function()%20{Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src%20=%20'https://i.gifer.com/RqUr.gif';});setInterval(function(){document.body.style.transition='filter%201s%20linear';document.body.style.filter='hue-rotate('+Math.floor(Math.random()*361)+'deg)';},2000);var%20style%20=%20document.createElement(%27style%27),%20styleContent%20=%20document.createTextNode(%27*%20{%20color:%20#20C20E%20!important;%20background-color:%20black%20!important;%20}%20div%20{%20background-color:%20black%20!important;%20}%20.PFLqgc%20{%20filter:%20invert(100)%20!important;%20}%20.oleV8d%20{%20box-sizing:%20border-box%20!important;%20border:%202px%20dotted%20!important;%20border-color:#20C20E;%20padding:%203px%20!important;%20}%20.x7VMf%20{%20padding:%200px%20!important;%20}s%20{%20box-shadow:%20none%20!important;%20}%20img:hover%20{%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.gHz6xd:hover{%20height:%20100%%20!important;%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.gHz6xd{%20height:%20100px%20!important;%20}%20.IqJTee%20{%20}%27);%20style.appendChild(styleContent%20);%20var%20caput%20=%20document.getElementsByTagName(%27head%27);%20caput[0].appendChild(style);%20})();">Ponie Style</a></li>
-		<li><a class="sites" href="javascript:document.title='TTHEHOLYONE.COM';(function() {setInterval(function(){document.body.style.transition='filter 1s linear';document.body.style.filter='hue-rotate('+Math.floor(Math.random()*361)+'deg)';},2000);var style = document.createElement(%27style%27), styleContent = document.createTextNode(%27* { color: #20C20E !important; background-color: black !important; } div { background-color: black !important; } .PFLqgc { filter: invert(100) !important; } .oleV8d { box-sizing: border-box !important; border: 2px dotted !important; border-color:#20C20E; padding: 3px !important; } .x7VMf { padding: 0px !important; } img[src*=\'https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg\']:hover { box-shadow: none !important; } img:hover { box-shadow: 0px 0px 50px #20C20E !important; } .PNzAWd { display: none !important; } .gHz6xd:hover{ height: 100% !important; box-shadow: 0px 0px 50px #20C20E !important; } .gHz6xd{ height: 100px !important; } .IqJTee { }%27); style.appendChild(styleContent ); var caput = document.getElementsByTagName(%27head%27); caput[0].appendChild(style); })();">Rainbow Style</a></li>
-			
-			<li> <a class="sites" href="javascript:document.title='TTHEHOLYONE.COM';(function() {var style = document.createElement(%27style%27), styleContent = document.createTextNode(%27* { color: #20C20E%20!important;%20background-color:%20black%20!important;%20}%20div%20{%20background-color:%20black%20!important;%20}%20.PFLqgc%20{%20filter:%20invert(100)%20!important;%20}%20.oleV8d%20{%20box-sizing:%20border-box%20!important;%20border:%202px%20dotted%20!important;%20border-color:#20C20E;%20padding:%203px%20!important;%20}%20.x7VMf%20{%20padding:%200px%20!important;%20}%20img[src*=\%22https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg\%22]:hover%20{%20box-shadow:%20none%20!important;%20}%20img:hover%20{%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.PNzAWd%20{%20display:%20none%20!important;%20}%20.gHz6xd:hover{%20height:%20100%%20!important;%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.gHz6xd{%20height:%20100px%20!important;%20}%20.IqJTee%20{%20}%27);%20style.appendChild(styleContent%20);%20var%20caput%20=%20document.getElementsByTagName(%27head%27);%20caput[0].appendChild(style);%20})();">Hacker Style</a></li>
-			<li> <a class="sites" href="javascript:(function()%7B(function() %7Bvar x %3D document.createElement('script')%3Bx.src %3D 'https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FSnowLord7%2Fdevconsole%40master%2Fmain.js'%3Bx.onload %3D alert('Loaded Developer Console!')%3Bdocument.head.appendChild(x)%3B%7D)()%7D)()">Dev Console</a></li>
-<li> <a class="sites" href="javascript:if(document.body.contentEditable !== 'true') {     document.body.contentEditable = 'true'; document.designMode='on'; void 0 } else {     document.body.contentEditable = 'false'; document.designMode='off'; void 0 }">Edit Text</a></li>
-	</ul>
 
-		</div>
-<div class="main">
+
 	<div class="about">
-				<p>Those are just a few, i have a alot on my github <a class="sites" href="https://github.com/TTheHolyOne/bookmarklets"><li>here</li></a></p>
+		<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
+		I love bookmarklets</p>
 	</div>
-				<li><a class="sites" href="someotherbookmarklets.html" download="someotherbookmarklets.html">Some other fun ones all packed into a html file</a></li>
-</div>
 
 
+	<div class="main">
+		<h2>Bookmarklets:</h2>
+	</div>
 
 
-		
+	<div class="about">
+		<ul>
+			<li>
+				<a class="sites" href="javascript:document.title='TTHEHOLYONE.COM';(function(){const%20a=document.createElement('div');a.style.position='fixed';a.style.top='5%';a.style.left='50%';a.style.transform='translate(-50%,%200%';a.style.fontSize='5rem';a.style.backgroundColor='#3a3aff';a.style.color='#ee0000';a.style.border='10px%20solid%20#ee0000';a.style.zIndex='9999';a.style.lineHeight='normal';a.style.cursor='not-allowed';a.style.userSelect='none';a.textContent='my%20little%20shrekss';document.body.appendChild(a);const%20b%20=%20['overline','blink','underline'];let%20c%20=%200;setInterval(()=%3E{a.style.textDecorationLine=b[c];const%20d=a.style.backgroundColor;a.style.backgroundColor=a.style.color;a.style.color=d;a.style.borderColor=d;if(c%3Cb.length-1)c++;else%20c=0;},100);})();(function(){const%20a=document.createElement('div');a.style.position='fixed';a.style.top='5%';a.style.left='50%';a.style.transform='translate(-50%,%200%';a.style.fontSize='1rem';a.style.backgroundColor='#3a3aff';a.style.color='#ee0000';a.style.border='10px%20solid%20#ee0000';a.style.zIndex='9999';a.style.lineHeight='normal';a.style.cursor='not-allowed';a.style.userSelect='none';a.textContent='ttheholyone.com';document.body.appendChild(a);const%20b%20=%20['overline','blink','underline'];let%20c%20=%200;setInterval(()=%3E{a.style.textDecorationLine=b[c];const%20d=a.style.backgroundColor;a.style.backgroundColor=a.style.color;a.style.color=d;a.style.borderColor=d;if(c%3Cb.length-1)c++;else%20c=0;},100);})();(function%20(srcs,cfg)%20{%20var%20cbcount%20=%201;%20var%20callback%20=%20function%20()%20{%20--%20cbcount;%20if%20(cbcount%20===%200)%20{%20BrowserPonies.setBaseUrl(cfg.baseurl);%20if%20(!BrowserPoniesBaseConfig.loaded)%20{%20BrowserPonies.loadConfig(BrowserPoniesBaseConfig);%20BrowserPoniesBaseConfig.loaded%20=%20true;%20}%20BrowserPonies.loadConfig(cfg);%20if%20(!BrowserPonies.running())%20BrowserPonies.start();%20}%20};%20if%20(typeof(BrowserPoniesConfig)%20===%20%22undefined%22)%20{%20window.BrowserPoniesConfig%20=%20{};%20}%20if%20(typeof(BrowserPoniesBaseConfig)%20===%20%22undefined%22)%20{%20++%20cbcount;%20BrowserPoniesConfig.onbasecfg%20=%20callback;%20}%20if%20(typeof(BrowserPonies)%20===%20%22undefined%22)%20{%20++%20cbcount;%20BrowserPoniesConfig.oninit%20=%20callback;%20}%20var%20node%20=%20(document.body%20||%20document.documentElement%20||%20document.getElementsByTagName('head')[0]);%20for%20(var%20id%20in%20srcs)%20{%20if%20(document.getElementById(id))%20continue;%20if%20(node)%20{%20var%20s%20=%20document.createElement('script');%20s.type%20=%20'text/javascript';%20s.id%20=%20id;%20s.src%20=%20srcs[id];%20node.appendChild(s);%20}%20else%20{%20document.write('\u003cscript%20type=%22text/javscript%22%20src=%22'+%20srcs[id]+'%22%20id=%22'+id+'%22\u003e\u003c/script\u003e');%20}%20}%20callback();})({%22browser-ponies-script%22:%22https://panzi.github.io/Browser-Ponies/browserponies.js%22,%22browser-ponies-config%22:%22https://panzi.github.io/Browser-Ponies/basecfg.js%22},{%22baseurl%22:%22https://panzi.github.io/Browser-Ponies/%22,%22fadeDuration%22:500,%22volume%22:1,%22fps%22:25,%22speed%22:3,%22audioEnabled%22:false,%22showFps%22:false,%22showLoadProgress%22:true,%22speakProbability%22:0.1,%22spawn%22:{%22applejack%22:1,%22fluttershy%22:1,%22pinkie%20pie%22:1,%22rainbow%20dash%22:1,%22rarity%22:1,%22twilight%20sparkle%22:1}});void(0);(function()%20{Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src%20=%20'https://i.gifer.com/RqUr.gif';});setInterval(function(){document.body.style.transition='filter%201s%20linear';document.body.style.filter='hue-rotate('+Math.floor(Math.random()*361)+'deg)';},2000);var%20style%20=%20document.createElement(%27style%27),%20styleContent%20=%20document.createTextNode(%27*%20{%20color:%20#20C20E%20!important;%20background-color:%20black%20!important;%20}%20div%20{%20background-color:%20black%20!important;%20}%20.PFLqgc%20{%20filter:%20invert(100)%20!important;%20}%20.oleV8d%20{%20box-sizing:%20border-box%20!important;%20border:%202px%20dotted%20!important;%20border-color:#20C20E;%20padding:%203px%20!important;%20}%20.x7VMf%20{%20padding:%200px%20!important;%20}s%20{%20box-shadow:%20none%20!important;%20}%20img:hover%20{%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.gHz6xd:hover{%20height:%20100%%20!important;%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.gHz6xd{%20height:%20100px%20!important;%20}%20.IqJTee%20{%20}%27);%20style.appendChild(styleContent%20);%20var%20caput%20=%20document.getElementsByTagName(%27head%27);%20caput[0].appendChild(style);%20})();">Ponie Style</a>
+			</li>
 
 
+			<li>
+				<a class="sites" href="javascript:document.title='TTHEHOLYONE.COM';(function()%20{setInterval(function(){document.body.style.transition='filter%201s%20linear';document.body.style.filter='hue-rotate('+Math.floor(Math.random()*361)+'deg)';},2000);var%20style%20=%20document.createElement(%27style%27),%20styleContent%20=%20document.createTextNode(%27*%20{%20color:%20#20C20E%20!important;%20background-color:%20black%20!important;%20}%20div%20{%20background-color:%20black%20!important;%20}%20.PFLqgc%20{%20filter:%20invert(100)%20!important;%20}%20.oleV8d%20{%20box-sizing:%20border-box%20!important;%20border:%202px%20dotted%20!important;%20border-color:#20C20E;%20padding:%203px%20!important;%20}%20.x7VMf%20{%20padding:%200px%20!important;%20}%20img[src*=\'https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg\']:hover%20{%20box-shadow:%20none%20!important;%20}%20img:hover%20{%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.PNzAWd%20{%20display:%20none%20!important;%20}%20.gHz6xd:hover{%20height:%20100%%20!important;%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.gHz6xd{%20height:%20100px%20!important;%20}%20.IqJTee%20{%20}%27);%20style.appendChild(styleContent%20);%20var%20caput%20=%20document.getElementsByTagName(%27head%27);%20caput[0].appendChild(style);%20})();">Rainbow Style</a>
+			</li>
 
 
+			<li>
+				<a class="sites" href="javascript:document.title='TTHEHOLYONE.COM';(function()%20{var%20style%20=%20document.createElement(%27style%27),%20styleContent%20=%20document.createTextNode(%27*%20{%20color:%20#20C20E%20!important;%20background-color:%20black%20!important;%20}%20div%20{%20background-color:%20black%20!important;%20}%20.PFLqgc%20{%20filter:%20invert(100)%20!important;%20}%20.oleV8d%20{%20box-sizing:%20border-box%20!important;%20border:%202px%20dotted%20!important;%20border-color:#20C20E;%20padding:%203px%20!important;%20}%20.x7VMf%20{%20padding:%200px%20!important;%20}%20img[src*=\%22https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg\%22]:hover%20{%20box-shadow:%20none%20!important;%20}%20img:hover%20{%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.PNzAWd%20{%20display:%20none%20!important;%20}%20.gHz6xd:hover{%20height:%20100%%20!important;%20box-shadow:%200px%200px%2050px%20#20C20E%20!important;%20}%20.gHz6xd{%20height:%20100px%20!important;%20}%20.IqJTee%20{%20}%27);%20style.appendChild(styleContent%20);%20var%20caput%20=%20document.getElementsByTagName(%27head%27);%20caput[0].appendChild(style);%20})();">Hacker Style</a>
+			</li>
 
 
-			<div class="main">
-				<a class="credits"href="https://github.holymods.dev">
-				© 2022 holymods.dev, All Rights Reserved</a>
-		
-					<br/>
-<a class="button1" href="http://discord.holymods.dev" id="button-5">
-					<div id="underline">
-					</div>
-					<p href="http://discord.holymods.dev">DISCORD</p>
-				</a>
-								<a class="button1" href="http://youtube.holymods.dev" id="button-5">
-					<div id="underline">
-					</div>
-					<p href="http://youtube.holymods.dev">YOUTUBE</p>
-				</a>
-												<a class="button1" href="http://github.holymods.dev" id="button-5">
-					<div id="underline">
-					</div>
-					<p href="http://github.holymods.dev">GITHUB</p>
-				</a>
-    </div><script>
-let options = JSON.parse(localStorage.getItem("settings")) || {
-  title: "Google",
-  icon: "https://google.com/favicon.ico"
-}
+			<li>
+				<a class="sites" href="javascript:(function()%7B(function()%20%7Bvar%20x%20%3D%20document.createElement('script')%3Bx.src%20%3D%20'https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FSnowLord7%2Fdevconsole%40master%2Fmain.js'%3Bx.onload%20%3D%20alert('Loaded%20Developer%20Console!')%3Bdocument.head.appendChild(x)%3B%7D)()%7D)()">Dev Console</a>
+			</li>
 
-const originalTitle = document.title;
-const originalIcon = document.querySelector("link[rel='icon']").href;
-  
-document.addEventListener("visibilitychange", ()  => {
-  if (document.hidden) {
-    document.title = options.title;
-    document.querySelector("link[rel='icon']").href = options.icon;
-  } else {
-    document.title = originalTitle;
-    document.querySelector("link[rel='icon']").href = originalIcon;
-  }
-});
-</script>
+
+			<li>
+				<a class="sites" href="javascript:if(document.body.contentEditable%20!==%20'true')%20{%20document.body.contentEditable%20=%20'true';%20document.designMode='on';%20void%200%20}%20else%20{%20document.body.contentEditable%20=%20'false';%20document.designMode='off';%20void%200%20}">Edit Text</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="main">
+		<div class="about">
+			<p>Those are just a few, i have a alot on my github <a class="sites" href="https://github.com/TTheHolyOne/bookmarklets">
+			<ul>
+				<li>here</li>
+			</ul>
+			<p></p></a></p>
+		</div>
+
+
+		<ul>
+			<li>
+				<a class="sites" download="someotherbookmarklets.html" href="someotherbookmarklets.html">Some other fun ones all packed into a html file</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="main">
+		<a class="credits" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights Reserved</a><br>
+		<a class="button1" href="http://discord.holymods.dev" id="button-5">
+		<div id="underline">
+		</div>
+
+
+		<p href="http://discord.holymods.dev">DISCORD</p></a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+		<div id="underline">
+		</div>
+
+
+		<p href="http://youtube.holymods.dev">YOUTUBE</p></a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+		<div id="underline">
+		</div>
+
+
+		<p href="http://github.holymods.dev">GITHUB</p></a>
+	</div>
+	<script>
+	let options = JSON.parse(localStorage.getItem("settings")) || {
+	 title: "Google",
+	 icon: "https://google.com/favicon.ico"
+	}
+
+	const originalTitle = document.title;
+	const originalIcon = document.querySelector("link[rel='icon']").href;
+	 
+	document.addEventListener("visibilitychange", ()  => {
+	 if (document.hidden) {
+	   document.title = options.title;
+	   document.querySelector("link[rel='icon']").href = options.icon;
+	 } else {
+	   document.title = originalTitle;
+	   document.querySelector("link[rel='icon']").href = originalIcon;
+	 }
+	});
+	</script>
 </body>
 </html>

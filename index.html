@@ -2,117 +2,114 @@
 
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width" name="viewport">
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
 
-    <title >HolyMods</title>
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="assets/js/script.js">
-    </script>
-
-		<link href="../assets/images/icon.png" rel="icon" >
-
-		</script></head>
+	<title>HolyMods</title>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="assets/js/script.js">
+	</script>
+	<link href="../assets/images/icon.png" rel="icon">
+</head>
 
 <body>
-    <div class="main">
+	<div class="main">
+		<h1><a class="back" href="../" style=" text-decoration: none;">holymods</a><a class="home" href="https://www.holymods.dev" style="display:inline; text-decoration: none;">.dev</a>
+		</h1>
+	</div>
 
 
-        <h1><a href="../"  class="back"style=" text-decoration: none;">holymods</a><a href="https://www.holymods.dev" style="display:inline;  text-decoration: none;" class="home">.dev</a>
-        </h1>
-    </div>
+	<div class="main">
+		<div class="about">
+			<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
+			Here we sell mods, accounts, etc..<br>
+			We also have downloads, games, and more!</p>
+		</div>
+		<a class="button" href="about" id="button-4">
+		<div id="underline">
+		</div>
 
 
-    <div class="main">
-        <div class="about">
-            <p>I'm TTheHolyOne and welcome to holymods.dev!<br>
-            Here we sell mods, accounts, etc..<br>
-            We also have downloads, games, and more!</p>
-        </div>
-        <a class="button" href="about" id="button-4">
-        <div id="underline">
-        </div>
+		<p>ABOUT ME</p></a> <a class="button" href="settings" id="button-4">
+		<div id="underline">
+		</div>
 
 
-        <p href="about">ABOUT ME</p></a> <a class="button" href="settings" id="button-4">
-        <div href="settings" id="underline">
-        </div>
+		<p>SETTINGS</p></a><br>
 
 
-        <p href="settings">SETTINGS</p></a><br>
+		<div class="main">
+			<a class="button" href="downloads" id="button-4">
+			<div id="underline">
+			</div>
 
 
-        <div class="main">
-            <a class="button" href="downloads" id="button-4">
-            <div id="underline">
-            </div>
+			<p>DOWNLOADS</p></a> <a class="button" href="shop" id="button-4">
+			<div id="underline">
+			</div>
 
 
-            <p href="downloads">DOWNLOADS</p></a> <a class="button" href="shop" id="button-4">
-            <div id="underline">
-            </div>
+			<p>SHOP</p></a><br>
 
 
-            <p href="shop">SHOP</p></a><br>
+			<div class="main">
+				<a class="button" href="bookmarklets" id="button-4">
+				<div id="underline">
+				</div>
 
 
-            <div class="main">
-                <a class="button" href="bookmarklets" id="button-4">
-                <div id="underline">
-                </div>
+				<p>BOOKMARKLETS</p></a> <a class="button" href="games" id="button-4">
+				<div id="underline">
+				</div>
 
 
-                <p href="shop">BOOKMARKLETS</p></a> <a class="button" href="games" id="button-4">
-                <div id="underline">
-                </div>
+				<p>GAMES</p></a>
+			</div>
 
 
-                <p href="shop">GAMES</p></a>
-            </div>
+			<div class="main">
+				<a class="credits" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights Reserved</a><br>
+			</div>
 
 
-            <div class="main">
-                <a href="https://github.holymods.dev"  class="credits">© 2022 holymods.dev, All Rights Reserved</a><br>
-            </div>
+			<div class="main">
+				<a class="button1" href="http://discord.holymods.dev" id="button-5">
+				<div id="underline">
+				</div>
 
 
-            <div class="main">
-                <a class="button1" href="http://discord.holymods.dev" id="button-5">
-                <div id="underline">
-                </div>
+				<p>DISCORD</p></a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+				<div id="underline">
+				</div>
 
 
-                <p href="http://discord.holymods.dev">DISCORD</p></a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
-                <div id="underline">
-                </div>
+				<p>YOUTUBE</p></a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+				<div id="underline">
+				</div>
 
 
-                <p href="http://youtube.holymods.dev">YOUTUBE</p></a> <a class="button1" href="http://github.holymods.dev" id="button-5">
-                <div id="underline">
-                </div>
+				<p>GITHUB</p></a>
+			</div>
+		</div>
+	</div>
+	<script>
+	   let options = JSON.parse(localStorage.getItem("settings")) || {
+	    title: "Google",
+	    icon: "https://google.com/favicon.ico"
+	   }
 
-
-                <p href="http://github.holymods.dev">GITHUB</p></a>
-            </div>
-        </div>
-    </div><script>
-let options = JSON.parse(localStorage.getItem("settings")) || {
-  title: "Google",
-  icon: "https://google.com/favicon.ico"
-}
-
-const originalTitle = document.title;
-const originalIcon = document.querySelector("link[rel='icon']").href;
-  
-document.addEventListener("visibilitychange", ()  => {
-  if (document.hidden) {
-    document.title = options.title;
-    document.querySelector("link[rel='icon']").href = options.icon;
-  } else {
-    document.title = originalTitle;
-    document.querySelector("link[rel='icon']").href = originalIcon;
-  }
-});
-</script>
+	   const originalTitle = document.title;
+	   const originalIcon = document.querySelector("link[rel='icon']").href;
+	    
+	   document.addEventListener("visibilitychange", ()  => {
+	    if (document.hidden) {
+	      document.title = options.title;
+	      document.querySelector("link[rel='icon']").href = options.icon;
+	    } else {
+	      document.title = originalTitle;
+	      document.querySelector("link[rel='icon']").href = originalIcon;
+	    }
+	   });
+	</script>
 </body>
 </html>
