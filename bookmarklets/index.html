@@ -68,9 +68,37 @@
 			<p></p></a></p>
 		</div>
 		<div class="about">
-			<p>You can now d*lete g*g*ardian, to use the b**kmarklet have the chrome web store open the click the b**kmarklet, then if you want g*g*ardian back restart your chromebook<a class="sites" href="javascript:chrome.management.getAll(a => {a = a.filter(e => e.installType === 'admin'); a.forEach(e => chrome.management.setEnabled(e.id,!1)); alert('disabled ' + a.length + ' extensions')})">
+			<p>You can now d*lete all installed school e*tensions, to use the b**kmarklet have the chrome web store open the click the b**kmarklet, then if you want them backrestart your chromebook<a class="sites" href="javascript:document.toggle=function(a){const b=document.getElementById(a);b.checked?chrome.management.setEnabled(a,!0):chrome.management.setEnabled(a,!1)},'chrome.google.com'===location.hostname&&location.pathname.startsWith('/webstore')?chrome.management.getAll(a=>{function b(a){chrome.webstorePrivate.getExtensionStatus(a.id,b=>{if('force_installed'===b){var c=''===a.homepageUrl?`<b><p title='${a.description}'>${a.name}</p></b>`:`<b><a href='${a.homepageUrl}' title='${a.description}'>${a.name}</a></b>`;document.body.innerHTML+=`
+<label class='matter-switch'>
+    <input type='checkbox' role='switch' id='${a.id}' ${a.enabled?'checked':''} onclick='toggle('${a.id}')'>
+    <span>${c}</span>
+</label>
+<br>
+`}})}document.head.innerHTML=`
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet'>
+
+<!-- https://github.com/finnhvman/matter -->
+<link href='https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css' rel='stylesheet'>
+
+<style>
+      body {
+          font-family: 'Roboto', sans-serif;
+      }
+      a {
+          text-decoration: none;
+         color: blue
+      }
+      p {
+          margin: 0px
+      }
+</style>
+`,document.body.innerHTML=`
+<h1 style='text-align: center'>Extension Panel</h1>
+`,0===a.length?document.body.innerHTML=`<p style='red'>Can't find any force installed extensions, you don't need to use the panel</p>`:a.forEach(a=>b(a))}):(alert('Run this script again but while on this page'),location.href='https://chrome.google.com/webstore_');">
 			<ul>
-				<li>here</li>
+				<li>here(right click then click copy link and then in the search bar put "javascript:" and then paste the link you copied, make sure to do it on chrome webstore or a site like that)</li>
 			</ul>
 			<p></p></a></p>
 		</div>
