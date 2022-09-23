@@ -1,7 +1,7 @@
 
 let options = JSON.parse(localStorage.getItem("settings")) || {
-  title: "Google",
-  icon: "https://google.com/favicon.ico"
+  title: "HolyMods",
+  icon: "https://holymods.dev/assets/images/icon.png"
 }
 
 document.getElementById("text").value = options.title;
