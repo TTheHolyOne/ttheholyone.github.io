@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width" name="viewport">
@@ -14,7 +15,8 @@
 
 <body>
 	<div class="main">
-		<h1><a class="back" href="../" style=" text-decoration: none;">holymods</a><a class="home" href="" style="display:inline; text-decoration: none;">.dev</a>
+		<h1><a class="back" href="../" style=" text-decoration: none;">holymods</a><a class="home" href=""
+				style="display:inline; text-decoration: none;">.dev</a>
 		</h1>
 	</div>
 
@@ -22,48 +24,59 @@
 	<div class="main">
 		<div class="about">
 			<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
-			Here we sell mods, accounts, etc..<br>
-			We also have downloads, games, and more!</p>
+				Click about me for my portfolio and site tree<br>
+				Enjoy!
+			</p>
 		</div>
 		<a class="button" href="about" id="button-4">
-		<div id="underline">
-		</div>
+			<div id="underline">
+			</div>
 
 
-		<p>ABOUT ME</p></a> <a class="button" href="settings" id="button-4">
-		<div id="underline">
-		</div>
+			<p>ABOUT ME</p>
+		</a>
+		<!--BLOG--><a class="button" href="blog" id="button-4">
+			<div id="underline">
+			</div>
 
 
-		<p>SETTINGS</p></a><br>
+			<p>BLOG</p>
+		</a>
+
+		</a><br>
 
 
 		<div class="main">
-			<a class="button" href="dl" id="button-4">
-			<div id="underline">
-			</div>
+			<!--School--><a class="button" href="school" id="button-4">
+				<div id="underline">
+				</div>
 
 
-			<p>DOWNLOADS & MORE</p></a> <a class="button" href="shop" id="button-4">
-			<div id="underline">
-			</div>
+				<p>SCHOOL</p>
+			</a>
+			<!--Shop--><a class="button" href="shop" id="button-4">
+				<div id="underline">
+				</div>
 
 
-			<p>SHOP</p></a><br>
+				<p>SHOP</p>
+			</a><br>
 
 
 			<div class="main">
-				<a class="button" href="bookmarklets" id="button-4">
-				<div id="underline">
-				</div>
+				<a class="button" href="settings" id="button-4">
+					<div id="underline">
+					</div>
 
 
-				<p>BOOKMARKLETS</p></a> <a class="button" href="games" id="button-4">
-				<div id="underline">
-				</div>
+					<p>SETTINGS</p>
+					<a class="button" href="updates" id="button-4">
+						<div id="underline">
+						</div>
 
 
-				<p>GAMES</p></a>
+						<p>CHANGELOG</p>
+					</a>
 			</div>
 
 
@@ -74,42 +87,46 @@
 
 			<div class="main">
 				<a class="button1" href="http://discord.holymods.dev" id="button-5">
-				<div id="underline">
-				</div>
+					<div id="underline">
+					</div>
 
 
-				<p>DISCORD</p></a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
-				<div id="underline">
-				</div>
+					<p>DISCORD</p>
+				</a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
 
 
-				<p>YOUTUBE</p></a> <a class="button1" href="http://github.holymods.dev" id="button-5">
-				<div id="underline">
-				</div>
+					<p>YOUTUBE</p>
+				</a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
 
 
-				<p>GITHUB</p></a>
+					<p>GITHUB</p>
+				</a>
 			</div>
 		</div>
 	</div>
 	<script>
-	   let options = JSON.parse(localStorage.getItem("settings")) || {
-  title: "HolyMods",
-  icon: "https://holymods.dev/assets/images/icon.png"
-}
+		let options = JSON.parse(localStorage.getItem("settings")) || {
+			title: "HolyMods",
+			icon: "https://holymods.dev/assets/images/icon.png"
+		}
 
-	   const originalTitle = document.title;
-	   const originalIcon = document.querySelector("link[rel='icon']").href;
-	    
-	   document.addEventListener("visibilitychange", ()  => {
-	    if (document.hidden) {
-	      document.title = options.title;
-	      document.querySelector("link[rel='icon']").href = options.icon;
-	    } else {
-	      document.title = originalTitle;
-	      document.querySelector("link[rel='icon']").href = originalIcon;
-	    }
-	   });
+		const originalTitle = document.title;
+		const originalIcon = document.querySelector("link[rel='icon']").href;
+
+		document.addEventListener("visibilitychange", () => {
+			if (document.hidden) {
+				document.title = options.title;
+				document.querySelector("link[rel='icon']").href = options.icon;
+			} else {
+				document.title = originalTitle;
+				document.querySelector("link[rel='icon']").href = originalIcon;
+			}
+		});
 	</script>
 </body>
+
 </html>

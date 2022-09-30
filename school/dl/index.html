@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+
+	<title>HolyMods - Downloads & More</title>
+	<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="../../assets/js/script.js">
+	</script>
+	<link href="../../assets/images/icon.png" rel="icon">
+</head>
+
+<body>
+	<div class="main">
+		<h1><a class="back" href="../" style=" text-decoration: none;">back</a><a class="home" href="../"
+				style="display:inline; text-decoration: none;">.home</a>
+		</h1>
+	</div>
+
+
+	<div class="about">
+		<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
+			I really love sharing tools, cheats, code, etc..!</p>
+	</div>
+
+
+	<div class="main">
+		<div class="about">
+			<h1>Downloads & More:</h1>
+
+
+			<div class="main">
+				<div class="about">
+					<ul>
+						<li>
+							<a class="sites" href="https://g.eags.us/eaglercraft/">M*necraft Multiplayer Version 1.5.2 (
+								Has Download Top Right)</a>
+						</li>
+
+
+						<li>
+							<a class="sites" href="https://g.eags.us/eaglercraft/beta">M*necraft Version Singleplayer
+								1.3 ( Has Download Top Right)</a>
+						</li>
+
+
+						<li>
+							<a class="sites" href="bypasses.html">G*Gu*rdian Byp*ss*s Complete List</a>
+						</li>
+
+
+						<li>
+							<a class="sites" href="https://app.apponfly.com/trial">Windows 10</a>
+						</li>
+
+
+						<li>
+							<a class="sites" href="https://replit.com/@TTheHolyOne/HOLYBLOCK#main.py">Br*wser</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="main">
+				<a class="credits" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights Reserved</a><br>
+				<a class="button1" href="http://discord.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
+
+
+					<p href="http://discord.holymods.dev">DISCORD</p>
+				</a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
+
+
+					<p href="http://youtube.holymods.dev">YOUTUBE</p>
+				</a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
+
+
+					<p href="http://github.holymods.dev">GITHUB</p>
+				</a>
+			</div>
+		</div>
+		<script>
+			let options = JSON.parse(localStorage.getItem("settings")) || {
+				title: "HolyMods",
+				icon: "https://holymods.dev/assets/images/icon.png"
+			}
+
+			const originalTitle = document.title;
+			const originalIcon = document.querySelector("link[rel='icon']").href;
+
+			document.addEventListener("visibilitychange", () => {
+				if (document.hidden) {
+					document.title = options.title;
+					document.querySelector("link[rel='icon']").href = options.icon;
+				} else {
+					document.title = originalTitle;
+					document.querySelector("link[rel='icon']").href = originalIcon;
+				}
+			});
+		</script>
+	</div>
+</body>
+
+</html>
