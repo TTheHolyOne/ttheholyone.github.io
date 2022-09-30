@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+	<title>HolyMods - About</title>
+	<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="../assets/js/script.js">
+	</script>
+	<link href="../assets/images/icon.png" rel="icon">
+</head>
+
+<body>
+	<div class="main">
+		<h1><a class="back" href="../" style=" text-decoration: none;">back</a><a class="home" href="../"
+				style="display:inline; text-decoration: none;">.home</a></h1>
+	</div>
+	<div class="about">
+		<p>I am TTheHolyOne and this is where you learn about me and the topics I'm interested in right now.<br>
+			Fun Fact: I do not enjoy writing, so this page was a suprise.</p>
+	</div>
+	<div class="main">
+		<h2>Sorted by Date:</h2>
+	</div>
+	<div class="about">
+		<p>im sorry i do not see any posts right now</p>
+	</div>
+	<div class="main">
+		<a class="credits" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights Reserved</a><br>
+		<a class="button1" href="http://discord.holymods.dev" id="button-5">
+			<div id="underline"></div>
+			<p>DISCORD</p>
+		</a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+			<div id="underline"></div>
+			<p>YOUTUBE</p>
+		</a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+			<div id="underline"></div>
+			<p>GITHUB</p>
+		</a>
+	</div>
+	<script>
+		let options = JSON.parse(localStorage.getItem("settings")) || {
+			title: "HolyMods",
+			icon: "https://holymods.dev/assets/images/icon.png"
+		}
+
+		const originalTitle = document.title;
+		const originalIcon = document.querySelector("link[rel='icon']").href;
+
+		document.addEventListener("visibilitychange", () => {
+			if (document.hidden) {
+				document.title = options.title;
+				document.querySelector("link[rel='icon']").href = options.icon;
+			} else {
+				document.title = originalTitle;
+				document.querySelector("link[rel='icon']").href = originalIcon;
+			}
+		});
+	</script>
+</body>
+
+</html>
