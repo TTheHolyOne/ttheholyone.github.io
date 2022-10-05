@@ -1,82 +1,132 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width" name="viewport">
 
 	<title>HolyMods</title>
-	<link href="../style.css" rel="stylesheet" type="text/css">
-	<script src="../script.js">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="assets/js/script.js">
 	</script>
-	<link href="../icon.png" rel="shortcut icon">
+	<link href="../assets/images/icon.png" rel="icon">
 </head>
 
 <body>
 	<div class="main">
-		<h1><a href="../" style="color:white; text-decoration: none;">holymods</a><a href="https://www.holymods.dev" style="display:inline; color:lime; text-decoration: none;">.dev</a>
+		<h1><a class="back" href="../" style=" text-decoration: none;">holymods</a><a class="home" href=""
+				style="display:inline; text-decoration: none;">.dev</a>
 		</h1>
 	</div>
 
 
-	<div class="about">
-		<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
-		Here we sell mods, accounts, etc..<br>
-		We also have downloads, sites, and more!</p>
-
-
+	<div class="main">
+		<div class="about">
+			<p>I'm TTheHolyOne and welcome to holymods.dev!<br>
+				Click about me for my portfolio and site tree<br>
+				Enjoy!
+			</p>
+		</div>
 		<a class="button" href="about" id="button-4">
 			<div id="underline">
 			</div>
-			<p href="about">ABOUT</p>
+
+
+			<p>ABOUT ME</p>
 		</a>
-
-
-		<a class="button" href="credits" id="button-4">
-			<div href="credits" id="underline">
+		<!--BLOG--><a class="button" href="blog" id="button-4">
+			<div id="underline">
 			</div>
-			<p href="credits">CREDITS</p>
+
+
+			<p>BLOG</p>
 		</a>
-		<br>
+
+		</a><br>
+
 
 		<div class="main">
-
-			
-			<a href="downloads" class="button" id="button-4">
+			<!--School--><a class="button" href="school" id="button-4">
 				<div id="underline">
 				</div>
-				<p href="downloads">DOWNLOADS</p>
+
+
+				<p>SCHOOL</p>
 			</a>
-			
-
-
-			<a href="shop" class="button" id="button-4">
+			<!--Shop--><a class="button" href="shop" id="button-4">
 				<div id="underline">
 				</div>
-				<p href="shop">SHOP</p>
-			</a>
-			<br>
+
+
+				<p>SHOP</p>
+			</a><br>
 
 
 			<div class="main">
-				<a class="button" href="bookmarklets" id="button-4">
+				<a class="button" href="settings" id="button-4">
 					<div id="underline">
 					</div>
-					<p href="shop">BOOKMARKLETS</p>
-				</a>
-								<a class="button" href="sites" id="button-4">
-					<div id="underline">
-					</div>
-					<p href="shop">SITES</p>
-				</a>
+
+
+					<p>SETTINGS</p>
+					<a class="button" href="updates" id="button-4">
+						<div id="underline">
+						</div>
+
+
+						<p>CHANGELOG</p>
+					</a>
 			</div>
 
 
 			<div class="main">
-				<a style="color:white;"href="https://www.github.com/ttheholyone/holymods.dev">
-				<image class="img" src="../icon.png">© 2022 holymods.dev, All Rights Reserved</image></a>
+				<a class="credits" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights Reserved</a><br>
+			</div>
+
+
+			<div class="main">
+				<a class="button1" href="http://discord.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
+
+
+					<p>DISCORD</p>
+				</a> <a class="button1" href="http://youtube.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
+
+
+					<p>YOUTUBE</p>
+				</a> <a class="button1" href="http://github.holymods.dev" id="button-5">
+					<div id="underline">
+					</div>
+
+
+					<p>GITHUB</p>
+				</a>
 			</div>
 		</div>
 	</div>
+	<script>
+		let options = JSON.parse(localStorage.getItem("settings")) || {
+			title: "HolyMods",
+			icon: "https://holymods.dev/assets/images/icon.png"
+		}
+
+		const originalTitle = document.title;
+		const originalIcon = document.querySelector("link[rel='icon']").href;
+
+		document.addEventListener("visibilitychange", () => {
+			if (document.hidden) {
+				document.title = options.title;
+				document.querySelector("link[rel='icon']").href = options.icon;
+			} else {
+				document.title = originalTitle;
+				document.querySelector("link[rel='icon']").href = originalIcon;
+			}
+		});
+	</script>
 </body>
+
 </html>
