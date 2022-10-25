@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+
+	<title>HolyMods - About Middleschool</title>
+	<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+	<script src="../../assets/js/script.js">
+	</script>
+	<link href="../../assets/images/icon.png" rel="icon">
+</head>
+
+<body>
+	<div class="main">
+		<h1><a class="back" href="../" style=" text-decoration: none;">back</a><a class="home" href="../"
+				style="display:inline; text-decoration: none;">.about</a>
+		</h1>
+	</div>
+
+	<div class="about">
+		<p>I am TTheHolyOne and this is where you learn about my highschool education.<br>
+			Fun Fact: I've been programming since 2016<br></p>
+	</div>
+	<sub>I cannot remember what I did in 6th grade, nor can I check because I moved schools.</sub>
+	<div class="main">
+		<h2>About 7th Grade:</h2>
+	</div>
+
+
+	<div class="about" id="highschool">
+		<h3>G.P.A.: <i>I cannot check as I moved schools. Sorry.</i></h3>
+		<h3>Classes: <i>All Required</i></h3>
+		<h3>Electives: <i>Band, FCS, Computer Science, Art, Spanish.</i></h3>
+	</div>
+	<div class="main">
+		<h2>About 8th Grade:</h2>
+	</div>
+
+
+	<div class="about" id="highschool">
+		<h3>G.P.A.: <i>My school doesn't do GPA until <a class="sites" href="../hs">Highschool</a>, weird I know.</i>
+		</h3>
+		<h3>Classes: <i>All Required</i></h3>
+		<h3>Electives: <i>Fiancial Literacy, Career Planning, Band.</i></h3>
+		<h3>Future Electives: <i>STEM, Art, FCS, Computers.</i></h3>
+	</div>
+	<div class="main">
+		<a class="credits" target="_blank" href="https://github.holymods.dev">© 2022 holymods.dev, All Rights
+			Reserved</a><br>
+		<a class="button1" target="_blank" href="http://discord.holymods.dev" id="button-5">
+			<div id="underline">
+			</div>
+
+
+			<p>DISCORD</p>
+		</a> <a class="button1" target="_blank" href="http://youtube.holymods.dev" id="button-5">
+			<div id="underline">
+			</div>
+
+
+			<p>YOUTUBE</p>
+		</a> <a class="button1" target="_blank" href="http://github.holymods.dev" id="button-5">
+			<div id="underline">
+			</div>
+
+
+			<p>GITHUB</p>
+		</a>
+	</div>
+	<script>
+		let options = JSON.parse(localStorage.getItem("settings")) || {
+			title: "HolyMods",
+			icon: "https://holymods.dev/assets/images/icon.png"
+		}
+
+		const originalTitle = document.title;
+		const originalIcon = document.querySelector("link[rel='icon']").href;
+
+		document.addEventListener("visibilitychange", () => {
+			if (document.hidden) {
+				document.title = options.title;
+				document.querySelector("link[rel='icon']").href = options.icon;
+			} else {
+				document.title = originalTitle;
+				document.querySelector("link[rel='icon']").href = originalIcon;
+			}
+		});
+	</script>
+</body>
+
+</html>
