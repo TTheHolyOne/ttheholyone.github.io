@@ -64,11 +64,11 @@
   --ccolor: lime;	
 }
 :root.light {
-  --bgcolor: #fff;	
+  --bgcolor: #F8F8FF;	
   --sbgcolor: #ae4747;
   --bcolor: #6b0000;
   --color: #6b0000;
-  --btncolor: #fff;
+  --btncolor: #F8F8FF;
   --ccolor: #ae4747;
 }
 :root.dark {
